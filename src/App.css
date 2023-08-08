@@ -1,0 +1,118 @@
+* {
+  margin: 0 auto;
+  /* padding: 10px; */
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.973);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  padding: 15px;
+}
+
+.app {
+  background-image: url("./assets/Sunny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.app.rainy {
+  background-image: url("./assets/Rainy.jpg");
+}
+
+.app.snowy {
+  background-image: url("./assets/Snowy.jpg");
+}
+
+.app.cloudy {
+  background-image: url("./assets/Cloudy.jpg");
+  color: black;
+}
+
+.container {
+  padding: 25px;
+}
+
+.search-box {
+  width: 60%;
+  margin: 50px auto;
+}
+
+.search-box .search-bar {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px rgba(240, 171, 69, 0.5);
+  color: black;
+  transition: 0.5s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.location-container {
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.all-info-container {
+  position: relative;
+  display: inline-block;
+  padding: 105px;
+}
+
+.all-info-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.location-container .location {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.location-container .date {
+  font-size: 32px;
+  font-style: italic;
+  padding-top: 25px;
+  font-weight: 600;
+}
+
+.weather-container .temp {
+  position: relative;
+  display: inline-block;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+}
+
+.weather-container .temp-range {
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px rgba(45, 45, 48, 0.6);
+  padding: 25px;
+}
+.weather-container .weather {
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
